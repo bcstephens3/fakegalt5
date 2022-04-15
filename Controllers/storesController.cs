@@ -9,13 +9,13 @@ namespace api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class storesController : ControllerBase
+    public class storesController : ControllerBase   //enable automatic depolys
     {
         // GET: api/stores
         [HttpGet]
         public List<string> Get()
         {
-            return new List<string> { "it worked", "yay" };
+            return new List<string> { "it worked", "yay", "its online" };
         }
 
         // GET: api/stores/5
